@@ -1,0 +1,26 @@
+***Setup Ansible****
+	1  vi /etc/hostname
+    2  cat /etc/hostname
+    3  useradd ansadmin
+    4  passwd ansadmin			
+    6  visudo
+			ansadmin ALL=(ALL)			NOPASSWD:ALL
+    7  sudo su - ansadmin
+    8  vi /etc/ssh/sshd_config
+	  Remove # passwordAuthentication Yes
+	  Add # passwordAuthentication no
+    9  service sshd restart
+	10 exit
+	
+****Install Ansible****
+   yum install python
+   yum install python-pip
+   pip install ansible
+   ansible --version
+    
+	#Now create ansible.cfg file which should be under /etc/ansible/ path
+   mkdir /etc/ansible
+   cd /etc/ansible
+   #Copy ansible.cfg file from this path https://github.com/ansible/ansible/blob/devel/examples/ansible.cfg
+   vi ansible.cfg
+   touch hosts 
