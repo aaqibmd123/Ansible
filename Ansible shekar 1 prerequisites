@@ -1,0 +1,30 @@
+Resources to start
+Please create an AWS account through the below link if you don't have one.
+
+https://portal.aws.amazon.com/billing/signup#/start
+
+Clone below repo for my ansible playbooks.
+
+GitHub URL: https://github.com/yankils/ansible_for_beginners
+
+Join our forums to get clarification on your queries and to help others
+
+Slack Channel: Join Here
+
+LinkedIn: Join Here
+
+Instagram: Join Here
+
+
+
+Some of the useful ansible documentation links.
+
+Ansible modules: https://docs.ansible.com/ansible/latest/user_guide/modules.html
+
+Ansible Variables: https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html
+
+Write your 1st Ansible playbook: https://www.ansible.com/blog/getting-started-writing-your-first-playbook
+
+Ansible basics: https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html
+
+Resources for this lecture
