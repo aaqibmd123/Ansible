@@ -1,0 +1,22 @@
+****setup control nodes****
+1.Setup EC2 instance
+2.Setup Hostname
+3.create ansadmin user
+4.Add users to sudoers file
+5.Enable password based login
+
+
+
+#sudo su -
+#vi /etc/hostname
+     rhel-managed-node
+#hostname rhel-managed-node
+#useradd ansadmin
+#password ansadmin
+#vi /etc/ssh/sshd_config
+	Remove # passwordAuthentication Yes
+	Add # passwordAuthentication no
+#Service sshd reload 
+#visudo
+	ansadmin ALL=(ALL)			NOPASSWD:ALL
+	
